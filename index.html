@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no" name="viewport" />
@@ -14,553 +15,547 @@
     <link href="static/stylesheets/pandoc-code-highlight.css" rel="stylesheet" type="text/css" />
     <link href='static/css/circle_font.css' rel='stylesheet' type='text/css'>
     <script src="static/dist/jquery/jquery.min.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="ui large top fixed hidden menu">
-      <div class="ui container">
-
-        <!-- ###MENU### -->
-        <a class="active item">Home</a><a href="#zxc" class="item">Github <i class="github icon"></i></a><a class="item">Company</a><a class="item">Careers</a>
-
-        <div class="right menu">
-          <!-- <div class="item">
+        <div class="ui container">
+            <!-- ###MENU### -->
+            <a href="#hometitle" class="active item"><i class="home icon" style="padding-right: 0.5em;"></i> Home</a>
+            <a href="#" class="item"><i class="address book icon" style="padding-right: 0.5em;"></i> Sign Up</a>
+            <a href="#" class="item"><i class="comments outline icon" style="padding-right: 0.5em;"></i>Chatroom</a>
+            <a href="#" class="item"><i class="write icon" style="padding-right: 0.5em;"></i> The Blog</a>
+            <!-- // MENU -->
+            <div class="right menu">
+                <!-- <div class="item">
             <a class="ui button">Log in</a>
           </div> -->
-          <div class="item">
-            <a class="ui orange button">
-              <svg width="1.3em" viewBox="0 0 1348 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: text-bottom; margin-right: 0.3em">     
-                  <path d="M299.402,819.253 C255.293,841.941 217.57,875.335 189.645,915.949 C221.266,1155.64 425.809,1340.82 673.855,1342 C673.926,1342 673.996,1342 674.07,1342 C922.117,1340.82 1126.66,1155.64 1158.28,915.949 C1130.35,875.335 1092.63,841.941 1048.52,819.253 C1049.4,829.773 1049.82,840.402 1049.82,851.148 C1049.82,1059.2 881.816,1227.99 674.07,1229.28 C673.996,1229.28 673.926,1229.28 673.855,1229.28 C466.109,1227.99 298.105,1059.2 298.105,851.148 C298.105,840.402 298.523,829.773 299.402,819.253" id="benface3" fill="#ffffff"></path>
-                  <path d="M673.637,0.64 L0,364.988 L197.941,472.077 C182.98,499.863 172.902,552.495 172.902,613.085 L172.902,634.3 C172.902,724.003 194.977,796.234 222.332,796.234 L223.488,796.234 C269.977,714.566 357.75,659.484 458.449,659.484 C546.371,659.484 624.492,701.492 673.855,766.503 L673.855,766.788 C673.887,766.749 673.895,766.687 673.926,766.644 C673.969,766.699 674.031,766.734 674.07,766.788 L674.07,766.503 C723.434,701.492 801.555,659.484 889.477,659.484 C990.172,659.484 1077.94,714.566 1124.44,796.234 L1125.59,796.234 C1152.94,796.234 1175.02,724.003 1175.02,634.3 L1175.02,613.085 C1175.02,552.495 1164.94,499.863 1149.98,472.077 L1347.93,364.988 L674.285,0.64 L673.926,0.784 L673.637,0.64" id="benhat3" fill="#ffffff"></path>                
-                </svg>
-                BEN Global 
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--Sidebar Menu-->
-    <div class="ui vertical inverted sidebar menu">
-
-    <!-- ###MENU### -->
-      <a class="active item">Home</a><a class="item">Github <i class="github icon"></i></a><a class="item">Company</a><a class="item">Careers</a>
-      <a class="ui inverted button">
-        <svg width="1.3em" viewBox="0 0 1348 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: text-bottom; margin-right: 0.3em">
-            <path d="M299.402,819.253 C255.293,841.941 217.57,875.335 189.645,915.949 C221.266,1155.64 425.809,1340.82 673.855,1342 C673.926,1342 673.996,1342 674.07,1342 C922.117,1340.82 1126.66,1155.64 1158.28,915.949 C1130.35,875.335 1092.63,841.941 1048.52,819.253 C1049.4,829.773 1049.82,840.402 1049.82,851.148 C1049.82,1059.2 881.816,1227.99 674.07,1229.28 C673.996,1229.28 673.926,1229.28 673.855,1229.28 C466.109,1227.99 298.105,1059.2 298.105,851.148 C298.105,840.402 298.523,829.773 299.402,819.253" id="benface2" fill="#ffffff"></path>
-            <path d="M673.637,0.64 L0,364.988 L197.941,472.077 C182.98,499.863 172.902,552.495 172.902,613.085 L172.902,634.3 C172.902,724.003 194.977,796.234 222.332,796.234 L223.488,796.234 C269.977,714.566 357.75,659.484 458.449,659.484 C546.371,659.484 624.492,701.492 673.855,766.503 L673.855,766.788 C673.887,766.749 673.895,766.687 673.926,766.644 C673.969,766.699 674.031,766.734 674.07,766.788 L674.07,766.503 C723.434,701.492 801.555,659.484 889.477,659.484 C990.172,659.484 1077.94,714.566 1124.44,796.234 L1125.59,796.234 C1152.94,796.234 1175.02,724.003 1175.02,634.3 L1175.02,613.085 C1175.02,552.495 1164.94,499.863 1149.98,472.077 L1347.93,364.988 L674.285,0.64 L673.926,0.784 L673.637,0.64" id="benhat2" fill="#ffffff"></path>               
-          </svg>
-          BEN Global 
-      </a>
-    </div>
-    <!--Page Contents-->
-    <div class="pusher">
-      <div class="ui inverted vertical masthead center aligned segment landpage-image">
-        <div class="ui container">
-          <div class="ui large secondary inverted pointing menu">
-            <a class="toc item"><i class="sidebar icon"></i></a>
-
-            <!-- ###MENU### -->
-            <a class="active item">Home</a><a class="item">Github <i class="github icon"></i></a><a class="item">Company</a><a class="item">Careers</a>
-
-
-            <div class="right item">
-              <a id="test1" class="ui inverted button">
-
-                <!-- <img src="static/images/benhat_o.svg" style="width: 1.3em; fill: white; vertical-align: text-bottom; margin-right: 0.5em">  -->
-
-                <svg width="1.3em" viewBox="0 0 1348 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: text-bottom; margin-right: 0.3em">
-                   
-                  <path d="M299.402,819.253 C255.293,841.941 217.57,875.335 189.645,915.949 C221.266,1155.64 425.809,1340.82 673.855,1342 C673.926,1342 673.996,1342 674.07,1342 C922.117,1340.82 1126.66,1155.64 1158.28,915.949 C1130.35,875.335 1092.63,841.941 1048.52,819.253 C1049.4,829.773 1049.82,840.402 1049.82,851.148 C1049.82,1059.2 881.816,1227.99 674.07,1229.28 C673.996,1229.28 673.926,1229.28 673.855,1229.28 C466.109,1227.99 298.105,1059.2 298.105,851.148 C298.105,840.402 298.523,829.773 299.402,819.253" id="benface" fill="#ffffff"></path>
-
-                  <path d="M673.637,0.64 L0,364.988 L197.941,472.077 C182.98,499.863 172.902,552.495 172.902,613.085 L172.902,634.3 C172.902,724.003 194.977,796.234 222.332,796.234 L223.488,796.234 C269.977,714.566 357.75,659.484 458.449,659.484 C546.371,659.484 624.492,701.492 673.855,766.503 L673.855,766.788 C673.887,766.749 673.895,766.687 673.926,766.644 C673.969,766.699 674.031,766.734 674.07,766.788 L674.07,766.503 C723.434,701.492 801.555,659.484 889.477,659.484 C990.172,659.484 1077.94,714.566 1124.44,796.234 L1125.59,796.234 C1152.94,796.234 1175.02,724.003 1175.02,634.3 L1175.02,613.085 C1175.02,552.495 1164.94,499.863 1149.98,472.077 L1347.93,364.988 L674.285,0.64 L673.926,0.784 L673.637,0.64" id="benhat" fill="#ffffff"></path>
-                                
-                </svg>
-                
-                BEN Global 
-
-                <!-- <i class="globe icon" style="padding-left: 1em"></i> -->
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="ui text container">
-            <h1 class="ui inverted header">
-                <strong>North Pole <br>Blockchain Club</strong>
-            </h1>
-            <h2>
-                A local meetup to discuss blockchain at the North Pole
-            </h2>           
-            <div class="ui huge primary button" style="margin-top: 2vh;">
-                Get Started <i class="right arrow icon"></i>
-            </div>
-        </div>
-      </div>
-      <!-- // HERO IMAGE -->
-
-
-      <!-- ###################
-	  ########################
-      #### BEGIN WEBSITE #####
-	  ########################
-      #################### -->
-
-  
-      <div id="zxc" class="ui vertical stripe segment">
-        
-        <!-- SOCIAL -->
-        <div class="ui middle aligned stackable grid container">
-            <div class="row" style="padding-bottom: 10vh;">
-              <div class="ui text container">
-                <h3 class="ui header">
-                  Welcome to our club!
-                </h3>
-                <p>
-                  Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.
-                </p>
-                <a class="ui large button">Read More</a>
-                <h4 class="ui horizontal header divider">
-                  <a href="homepage.html#"> Read more on our Blog</a>
-                </h4>
-                <h3 class="ui header">
-                  Purchasing your first CryptoKittie
-                </h3>
-                <p>
-                  Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.
-                </p>
-                <a class="ui large button">I'm Still Quite Interested</a>
-              </div>
-            </div>
-        </div>
-        <!-- // SOCIAL -->
-
-        
-        <!-- TABLE & EMAIL -->
-        <div style="background: orange; padding: 10vh 0;">
-        <div class="ui middle aligned stackable grid container">
-        <!-- TABLE & EMAIL TITLE -->
-        <div class="row">
-            <div class="center aligned column">                
-                <div class="ui header">
-                    <h2 class="ui header">Upcoming Meetups & Workshops</h2>
+                <div class="item">
+                    <a class="ui orange button">
+                        <svg width="1.3em" viewBox="0 0 1348 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: text-bottom; margin-right: 0.3em">
+                            <path d="M299.402,819.253 C255.293,841.941 217.57,875.335 189.645,915.949 C221.266,1155.64 425.809,1340.82 673.855,1342 C673.926,1342 673.996,1342 674.07,1342 C922.117,1340.82 1126.66,1155.64 1158.28,915.949 C1130.35,875.335 1092.63,841.941 1048.52,819.253 C1049.4,829.773 1049.82,840.402 1049.82,851.148 C1049.82,1059.2 881.816,1227.99 674.07,1229.28 C673.996,1229.28 673.926,1229.28 673.855,1229.28 C466.109,1227.99 298.105,1059.2 298.105,851.148 C298.105,840.402 298.523,829.773 299.402,819.253" id="benface3" fill="#ffffff"></path>
+                            <path d="M673.637,0.64 L0,364.988 L197.941,472.077 C182.98,499.863 172.902,552.495 172.902,613.085 L172.902,634.3 C172.902,724.003 194.977,796.234 222.332,796.234 L223.488,796.234 C269.977,714.566 357.75,659.484 458.449,659.484 C546.371,659.484 624.492,701.492 673.855,766.503 L673.855,766.788 C673.887,766.749 673.895,766.687 673.926,766.644 C673.969,766.699 674.031,766.734 674.07,766.788 L674.07,766.503 C723.434,701.492 801.555,659.484 889.477,659.484 C990.172,659.484 1077.94,714.566 1124.44,796.234 L1125.59,796.234 C1152.94,796.234 1175.02,724.003 1175.02,634.3 L1175.02,613.085 C1175.02,552.495 1164.94,499.863 1149.98,472.077 L1347.93,364.988 L674.285,0.64 L673.926,0.784 L673.637,0.64" id="benhat3" fill="#ffffff"></path>
+                        </svg>
+                        BEN Global
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- // TABLE & EMAIL TITLE -->
-
-        <!-- TABLE & EMAIL -->
-        <div class="row">
-
-        	<!-- TABLE -->
-        	<div class="twelve wide column">
-        		<table class="ui celled table">
-        		  <thead>
-        		    <tr>
-        		<th>Meetup Memo</th>
-        		<th>Where?</th>
-        		<th>When?</th>
-        		    </tr>
-        		  </thead>
-        		  <tbody>
-        		    <tr>
-        		<td><a href="#">Opening Meeting <i class="external icon"></i></a></td>
-        		<td>Jefferson Hall 203</td>
-        		<td>Sep 05, 2018 @ 19:30</td>
-        		    </tr>
-        		    <tr>
-        		<td>Making a Wallet</td>
-        		<td class="warning">
-        			<i class="warning circle icon"></i>Marshall Hall 103
-        		</td>
-        		<td>Sep 14, 2018 @ 19:30</td>
-        		    </tr>
-        		    <tr>
-        		<td>What's Ethereum?</td>
-        		<td>Jefferson Hall 203</td>
-        		<td>Sep 27, 2018 @ 17:00</td>
-        		    </tr>
-        		    <tr>
-        		<td>Breeding CryptoKittie</td>
-        		<td>Jefferson Hall 203</td>
-        		<td>Oct 05, 2018 @ 19:30</td>
-        		    </tr>
-        		    <tr class="negative">
-        		<td></i> To be announced</td>
-        		<td></i> tba </td>
-        		<td class="negative">Mid-October</td>
-        		    </tr>
-        		  </tbody>
-        		</table>
-        	</div>
-        	<!-- // TABLE -->
-
-        	<!-- Email Pane -->
-        	<div class="four wide column">
-
-        		<h1 class="ui header">
-        			Don't miss any updates
-        		</h1>
-        		<p>
-        			Signup for our newsletter &amp never miss a beat <i class="heartbeat icon"></i>
-        		</p>
-        		
-        		<!-- Begin MailChimp Signup Form -->
-        		<div id="mc_embed_signup">
-
-        			<!-- ### COPY THE ACTION HTML FROM A NAKED MAILCHIMP FORUM EMBED ### -->
-        		<form action="https://blockchainedu.us12.list-manage.com/subscribe/post?u=8d73dcc52683717daddd85f52&amp;id=2fbc4770f5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate ui form" target="_blank" novalidate>
-        		    <div id="mc_embed_signup_scroll">
-        			
-        		<div class="mc-field-group field">
-        			<label for="mce-EMAIL">Email Address</label>
-        			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-        		</div>
-        			<div id="mce-responses" class="clear">
-        				<div class="response" id="mce-error-response" style="display:none"></div>
-        				<div class="response" id="mce-success-response" style="display:none"></div>
-        			</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        		    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8d73dcc52683717daddd85f52_2fbc4770f5" tabindex="-1" value=""></div>
-        		    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="ui button"></div>
-        		    </div>
-        		</form>
-        		</div>
-        		<!--End mc_embed_signup-->
-
-        	</div>
-        	<!-- // Email Pane -->
-
-        
-        </div>
-        </div>
-        <!-- // TABLE & EMAIL -->
-
-    <!-- ALIGNMENT? -->
-      </div>
-
-      <!--  TEAM PAGE  -->
-      <div class="ui middle aligned stackable grid container" style="padding-top: 10vh;">
-              <!-- TEAM TITLE -->
-              <div class="row">
-                  <div class="center aligned column">                
-                      <div class="ui header">
-                          <h2 class="ui header">Get in touch with the team</h2>
-                      </div>
-                  </div>
-              </div>
-              <div class="row">
-              <!-- // TEAM TITLE -->
-                  
-                  <!-- CARD -->
-                  <div class="four wide column">
-                      <div class="ui card centered">
-                      <!-- insert profile picture below -->
-                      <div class="image"><img src="static/images/templates/semantic-ui/speaker/speaker-1.png"></div>
-                          <div class="content">
-                              <div class="header">Jane Nakamoto</div>
-                              <div class="meta"><a class="group">President</a></div>
-                              <!-- <div class="description">One or two sentence description that may go to several lines</div> -->
-                              <div class="extra content">
-                                <div class="right floated created">
-                                  <a href="#"><i class="github icon"></i></a>
-                                  <a href="#"><i class="linkedin icon"></i></a>
-                                  <a href="#"><i class="twitter icon"></i></a>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-
-                  </div>
-                  <!-- // CARD -->
-
-                  <!-- CARD -->
-                  <div class="four wide column">
-                      
-                      <div class="ui card centered">
-                        <div class="image">
-                          <img src="static/images/templates/semantic-ui/speaker/speaker-2.png">
-                        </div>
-                     <div class="content">
-                          <div class="header">Joe Finney</div>
-
-                          <div class="meta">
-                          <a class="group">Vice-President</a>
-                          </div>
-                          <!-- <div class="description">One or two sentence description that may go to several lines</div> -->
-                        
-                      <div class="extra content">
-                        <div class="right floated created">
-                          <a href="#"><i class="github icon"></i></a>
-                          <a href="#"><i class="linkedin icon"></i></a>
-                          <a href="#"><i class="twitter icon"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                        
-                      </div>
-
-                  </div>
-                  <!-- // CARD -->
-
-                  <!-- CARD -->
-                  <div class="four wide column">
-                      
-                      <div class="ui card centered">
-                        <div class="image">
-                          <img src="static/images/templates/semantic-ui/speaker/speaker-3.png">
-                        </div>
-                     <div class="content">
-                          <div class="header">Rodger Garzik</div>
-
-                          <div class="meta">
-                          <a class="group">Treasurer</a>
-                          </div>
-                          <!-- <div class="description">One or two sentence description that may go to several lines</div> -->
-                        
-                      <div class="extra content">
-                        <div class="right floated created">
-                          <a href="#"><i class="github icon"></i></a>
-                          <a href="#"><i class="linkedin icon"></i></a>
-                          <a href="#"><i class="twitter icon"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                        
-                      </div>
-
-                  </div>
-                  <!-- // CARD -->
-
-                  <!-- CARD -->
-                  <div class="four wide column">
-                      
-                      <div class="ui card centered">
-                        <div class="image">
-                          <img src="static/images/templates/semantic-ui/speaker/speaker-4.png">
-                        </div>
-                     <div class="content">
-                          <div class="header">Gavin Tree</div>
-
-                          <div class="meta">
-                          <a class="group">Secretary</a>
-                          </div>
-                          <!-- <div class="description">One or two sentence description that may go to several lines</div> -->
-                        
-                      <div class="extra content">
-                        <div class="right floated created">
-                          <a href="#"><i class="github icon"></i></a>
-                          <a href="#"><i class="linkedin icon"></i></a>
-                          <a href="#"><i class="twitter icon"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                        
-                      </div>
-
-                  </div>
-                  <!-- // CARD -->
-
-              </div>
-          
-      </div>
     </div>
-      <!-- // TEAM PAGE -->
-
-      <!-- QUOTES -->
-      <!-- <div class="ui vertical stripe quote segment">
-        <div class="ui equal width stackable internally celled grid">
-          <div class="center aligned row">
-            <div class="column">
-              <h3>
-                "What a Company"
-              </h3>
-              <p>
-                That is what they all say about us
-              </p>
+    <!--Sidebar Menu-->
+    <div class="ui vertical inverted sidebar menu">
+        <!-- ###MENU_2### -->
+        <a href="#hometitle" class="active item"><i class="home icon" style="padding-right: 0.5em;"></i> Home</a>
+        <a href="#" class="item"><i class="address book icon" style="padding-right: 0.5em;"></i> Sign Up</a>
+        <a href="#" class="item"><i class="comments outline icon" style="padding-right: 0.5em;"></i>Chatroom</a>
+        <a href="#" class="item"><i class="write icon" style="padding-right: 0.5em;"></i> The Blog</a>
+        <!-- // MENU_2 -->
+        
+        <!-- BEN LOGO -->
+        <a class="ui inverted button">
+            <svg width="1.3em" viewBox="0 0 1348 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: text-bottom; margin-right: 0.3em">
+                <path d="M299.402,819.253 C255.293,841.941 217.57,875.335 189.645,915.949 C221.266,1155.64 425.809,1340.82 673.855,1342 C673.926,1342 673.996,1342 674.07,1342 C922.117,1340.82 1126.66,1155.64 1158.28,915.949 C1130.35,875.335 1092.63,841.941 1048.52,819.253 C1049.4,829.773 1049.82,840.402 1049.82,851.148 C1049.82,1059.2 881.816,1227.99 674.07,1229.28 C673.996,1229.28 673.926,1229.28 673.855,1229.28 C466.109,1227.99 298.105,1059.2 298.105,851.148 C298.105,840.402 298.523,829.773 299.402,819.253" id="benface2" fill="#ffffff"></path>
+                <path d="M673.637,0.64 L0,364.988 L197.941,472.077 C182.98,499.863 172.902,552.495 172.902,613.085 L172.902,634.3 C172.902,724.003 194.977,796.234 222.332,796.234 L223.488,796.234 C269.977,714.566 357.75,659.484 458.449,659.484 C546.371,659.484 624.492,701.492 673.855,766.503 L673.855,766.788 C673.887,766.749 673.895,766.687 673.926,766.644 C673.969,766.699 674.031,766.734 674.07,766.788 L674.07,766.503 C723.434,701.492 801.555,659.484 889.477,659.484 C990.172,659.484 1077.94,714.566 1124.44,796.234 L1125.59,796.234 C1152.94,796.234 1175.02,724.003 1175.02,634.3 L1175.02,613.085 C1175.02,552.495 1164.94,499.863 1149.98,472.077 L1347.93,364.988 L674.285,0.64 L673.926,0.784 L673.637,0.64" id="benhat2" fill="#ffffff"></path>
+            </svg>
+            BEN Global
+        </a>
+        <!-- // BEN LOGO -->
+    </div>
+    <!--Page Contents-->
+    <div class="pusher">
+        <div id="#hometitle" class="ui inverted vertical masthead center aligned segment landpage-image">
+            <div class="ui container">
+                <div class="ui large secondary inverted pointing menu">
+                    <a class="toc item"><i class="sidebar icon"></i></a>
+                    <!-- ###MENU_3### -->
+                    <a href="#hometitle" class="active item"><i class="home icon" style="padding-right: 0.5em;"></i> Home</a>
+                    <a href="#" class="item"><i class="address book icon" style="padding-right: 0.5em;"></i> Sign Up</a>
+                    <a href="#" class="item"><i class="comments outline icon" style="padding-right: 0.5em;"></i>Chatroom</a>
+                    <a href="#" class="item"><i class="write icon" style="padding-right: 0.5em;"></i> The Blog</a>
+                    <!-- // MENU_3 -->
+                    <div class="right item">
+                      <!-- BEN LOGO -->
+                        <a class="ui inverted button">
+                            <!-- <img src="static/images/benhat_o.svg" style="width: 1.3em; fill: white; vertical-align: text-bottom; margin-right: 0.5em">  -->
+                            <svg width="1.3em" viewBox="0 0 1348 1342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="vertical-align: text-bottom; margin-right: 0.3em">
+                                <path d="M299.402,819.253 C255.293,841.941 217.57,875.335 189.645,915.949 C221.266,1155.64 425.809,1340.82 673.855,1342 C673.926,1342 673.996,1342 674.07,1342 C922.117,1340.82 1126.66,1155.64 1158.28,915.949 C1130.35,875.335 1092.63,841.941 1048.52,819.253 C1049.4,829.773 1049.82,840.402 1049.82,851.148 C1049.82,1059.2 881.816,1227.99 674.07,1229.28 C673.996,1229.28 673.926,1229.28 673.855,1229.28 C466.109,1227.99 298.105,1059.2 298.105,851.148 C298.105,840.402 298.523,829.773 299.402,819.253" id="benface" fill="#ffffff"></path>
+                                <path d="M673.637,0.64 L0,364.988 L197.941,472.077 C182.98,499.863 172.902,552.495 172.902,613.085 L172.902,634.3 C172.902,724.003 194.977,796.234 222.332,796.234 L223.488,796.234 C269.977,714.566 357.75,659.484 458.449,659.484 C546.371,659.484 624.492,701.492 673.855,766.503 L673.855,766.788 C673.887,766.749 673.895,766.687 673.926,766.644 C673.969,766.699 674.031,766.734 674.07,766.788 L674.07,766.503 C723.434,701.492 801.555,659.484 889.477,659.484 C990.172,659.484 1077.94,714.566 1124.44,796.234 L1125.59,796.234 C1152.94,796.234 1175.02,724.003 1175.02,634.3 L1175.02,613.085 C1175.02,552.495 1164.94,499.863 1149.98,472.077 L1347.93,364.988 L674.285,0.64 L673.926,0.784 L673.637,0.64" id="benhat" fill="#ffffff"></path>
+                            </svg>
+                            BEN Global
+                            <!-- <i class="globe icon" style="padding-left: 1em"></i> -->
+                        </a>
+                        <!-- // BEN LOGO -->
+                    </div>
+                </div>
             </div>
-            <div class="column">
-              <h3>
-                "I shouldn't have gone with their competitor."
-              </h3>
-              <p>
-                <img class="ui avatar image" src="static/images/templates/semantic-ui/avatar/nan.jpg" /><b>Nan</b>Chief Fun Officer Acme Toys
-              </p>
+            <div class="ui text container">
+                <h1 class="ui inverted header">
+                  <strong>North Pole <br>Blockchain Club</strong>
+                </h1>
+                <h2>
+                  A local meetup to discuss blockchain at the North Pole
+                </h2>
+                <div class="ui huge primary button" style="margin-top: 2vh; border-radius: 100px;">
+                  <a href="#" style="color: white;"">
+                    Join the Fun! <i class="right arrow icon"></i>
+                  </a>
+                </div>
             </div>
-            <div class="column">
-              <h3>
-                "I shouldn't have gone with their competitor."
-              </h3>
-              <p>
-                <img class="ui avatar image" src="static/images/templates/semantic-ui/avatar/nan.jpg" /><b>Nan</b>Chief Fun Officer Acme Toys
-              </p>
-            </div>
-          </div>
         </div>
-      </div> -->
-      <!-- // QUOTES -->
+        <!-- // HERO IMAGE -->
 
-      
 
-      <!-- FOOTER -->
-      <div class="ui inverted vertical footer segment">
-        <div class="ui container">
-          <div class="ui stackable inverted divided equal height stackable grid">
-            <div class="three wide column">
-              <h4 class="ui inverted header">
-                About
-              </h4>
-              <div class="ui inverted link list">
-                <a class="item" href="homepage.html#"> Sitemap</a><a class="item" href="homepage.html#"> Contact Us</a><a class="item" href="homepage.html#"> Religious Ceremonies</a><a class="item" href="homepage.html#"> Gazebo Plans</a>
-              </div>
+        <!-- ###################
+        ########################
+        ####               #####
+        #### BEGIN WEBSITE #####
+        ####               #####
+        ########################
+        #################### -->
+
+
+        <div class="ui vertical stripe segment">
+            <!-- BLOG POSTS -->
+            <div class="ui middle aligned stackable grid container" style="padding-bottom: 8vh;">
+                <div class="row">
+                    <div class="ui text container">
+                        <!-- Place a medium blog article here that introduces your club. Copy the title/summary -->
+                        <h3 class="ui header">
+                          Welcome to our club!
+                        </h3>
+                        <p>
+                            We founded this group to rally blockchain enthusiasts who wish to make our special home into a hub of blockchain innovation. By making bitcoin, ethereum, and other cryptos usable here on the North Pole, we are participating in this global movement, locally.
+                        </p>
+                        <a href="#" class="ui large button">Discover the Vision</a>
+                        <!-- // title summary -->
+                        <!-- Medium Publication Link -->
+                        <h4 class="ui horizontal header divider"><a href="#">
+                          Read more on our Medium <i class="medium icon"></i></a>
+                        </h4>
+                        <!-- // Medium Publication Link -->
+                        <!-- Place a medium blog article of a highlight article -->
+                        <h3 class="ui header">
+                          Purchasing your first CryptoKittie
+                        </h3>
+                        <p>
+                            Ethereum is the world's first virtual computer. We're going to show you how to use it to trade and collect adorable kitties. Except unlike baseball cards, you can breed and sell your kitties on digital markets!
+                        </p>
+                        <a class="ui large button">I'm Still Quite Interested</a>
+                        <!-- // highlight article -->
+                    </div>
+                </div>
             </div>
-            <div class="three wide column">
-              <h4 class="ui inverted header">
-                Services
-              </h4>
-              <div class="ui inverted link list">
-                <a class="item" href="homepage.html#"> Banana Pre-Order</a><a class="item" href="homepage.html#"> DNA FAQ</a><a class="item" href="homepage.html#"> How To Access</a><a class="item" href="homepage.html#"> Favorite X-Men</a>
-              </div>
+            <!-- // BLOG POSTS -->
+            <!-- TABLE & EMAIL -->
+            <div class="mid" style="padding: 8vh 0;">
+                <div class="ui middle aligned stackable grid container">
+                    <!-- TABLE & EMAIL TITLE -->
+                    <div class="row">
+                        <div class="center aligned column">
+                            <div class="ui header">
+                                <h3 class="ui header">Upcoming Meetups & Workshops</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // TABLE & EMAIL TITLE -->
+                    <!-- TABLE & EMAIL -->
+                    <div class="row">
+                        <!-- TABLE -->
+                        <div class="twelve wide column">
+                            <table class="ui celled table">
+                                <thead>
+                                    <tr>
+                                        <th>Meetup Memo</th>
+                                        <th>Where?</th>
+                                        <th>When?</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">Opening Meeting <i class="external icon"></i></a></td>
+                                        <td>Jefferson Hall 203</td>
+                                        <td>Sep 05, 2018 @ 19:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Making a Wallet</td>
+                                        <td class="warning">
+                                            <i class="warning circle icon"></i>Marshall Hall 103
+                                        </td>
+                                        <td>Sep 14, 2018 @ 19:30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>What's Ethereum?</td>
+                                        <td>Jefferson Hall 203</td>
+                                        <td>Sep 27, 2018 @ 17:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Breeding CryptoKittie</td>
+                                        <td>Jefferson Hall 203</td>
+                                        <td>Oct 05, 2018 @ 19:30</td>
+                                    </tr>
+                                    <tr class="negative">
+                                        <td>
+                                            </i> To be announced</td>
+                                        <td>
+                                            </i> tba </td>
+                                        <td class="negative">Mid-October</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- // TABLE -->
+                        <!-- Email Pane -->
+                        <div class="four wide column">
+                            <h1 class="ui header">
+              Don't miss any updates
+            </h1>
+                            <p>
+                                Signup for our newsletter &amp never miss a beat <i class="heartbeat icon"></i>
+                            </p>
+                            <!-- Begin MailChimp Signup Form -->
+                            <div id="mc_embed_signup">
+                                <!-- ### COPY THE ACTION HTML FROM A NAKED MAILCHIMP FORUM EMBED ### -->
+                                <form action="https://blockchainedu.us12.list-manage.com/subscribe/post?u=8d73dcc52683717daddd85f52&amp;id=2fbc4770f5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate ui form" target="_blank" novalidate>
+                                    <div id="mc_embed_signup_scroll">
+                                        <div class="mc-field-group field">
+                                            <label for="mce-EMAIL">Email Address</label>
+                                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                        </div>
+                                        <div id="mce-responses" class="clear">
+                                            <div class="response" id="mce-error-response" style="display:none"></div>
+                                            <div class="response" id="mce-success-response" style="display:none"></div>
+                                        </div>
+                                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                            <input type="text" name="b_8d73dcc52683717daddd85f52_2fbc4770f5" tabindex="-1" value="">
+                                        </div>
+                                        <div class="clear">
+                                            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="ui button">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--End mc_embed_signup-->
+                        </div>
+                        <!-- // Email Pane -->
+                    </div>
+                    <div class="row" style="padding-top: 3vh;">
+                        <div class="ui twelve column centered grid">
+                            <div class="column">
+                                <a href="#"><i class="big circular inverted blue facebook icon"></i></a>
+                            </div>
+                            <div class="column">
+                                <a href="#"><i class="big circular inverted blue instagram icon"></i></a>
+                            </div>
+                            <div class="column">
+                                <a href="#"><i class="big circular inverted blue twitter icon"></i></a>
+                            </div>
+                            <div class="column">
+                                <a href="#"><i class="big circular inverted blue medium icon"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // TABLE & EMAIL -->
+                <!-- ALIGNMENT? -->
             </div>
-            <div class="seven wide column">
-              <h4 class="ui inverted header">
-                Footer Header
-              </h4>
-              <p>
-                Extra space for a call to action inside the footer that could help re-engage users.
-              </p>
+            <!--  TEAM PAGE  -->
+            <div class="ui middle aligned stackable grid container" style="padding-top: 8vh;">
+                <!-- TEAM TITLE -->
+                <div class="row">
+                    <div class="center aligned column">
+                        <div class="ui header">
+                            <h3 class="ui header">Get in touch with the team</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- // TEAM TITLE -->
+                    <!-- CARD -->
+                    <div class="four wide column">
+                        <div class="ui card centered">
+                            <!-- insert profile picture below -->
+                            <div class="image"><img src="static/images/templates/semantic-ui/speaker/speaker-1.png"></div>
+                            <div class="content">
+                                <div class="header">Jane Nakamoto</div>
+                                <div class="meta"><a class="group">President</a></div>
+                                <!-- <div class="description">One or two sentence description that may go to several lines</div> -->
+                                <div class="extra content">
+                                    <div class="right floated created">
+                                        <a href="#"><i class="github icon"></i></a>
+                                        <a href="#"><i class="linkedin icon"></i></a>
+                                        <a href="#"><i class="twitter icon"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // CARD -->
+                    <!-- CARD -->
+                    <div class="four wide column">
+                        <div class="ui card centered">
+                            <div class="image">
+                                <img src="static/images/templates/semantic-ui/speaker/speaker-2.png">
+                            </div>
+                            <div class="content">
+                                <div class="header">Joe Finney</div>
+                                <div class="meta">
+                                    <a class="group">Vice-President</a>
+                                </div>
+                                <!-- <div class="description">One or two sentence description that may go to several lines</div> -->
+                                <div class="extra content">
+                                    <div class="right floated created">
+                                        <a href="#"><i class="github icon"></i></a>
+                                        <a href="#"><i class="linkedin icon"></i></a>
+                                        <a href="#"><i class="twitter icon"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // CARD -->
+                    <!-- CARD -->
+                    <div class="four wide column">
+                        <div class="ui card centered">
+                            <div class="image">
+                                <img src="static/images/templates/semantic-ui/speaker/speaker-3.png">
+                            </div>
+                            <div class="content">
+                                <div class="header">Rodger Garzik</div>
+                                <div class="meta">
+                                    <a class="group">Treasurer</a>
+                                </div>
+                                <!-- <div class="description">One or two sentence description that may go to several lines</div> -->
+                                <div class="extra content">
+                                    <div class="right floated created">
+                                        <a href="#"><i class="github icon"></i></a>
+                                        <a href="#"><i class="linkedin icon"></i></a>
+                                        <a href="#"><i class="twitter icon"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // CARD -->
+                    <!-- CARD -->
+                    <div class="four wide column">
+                        <div class="ui card centered">
+                            <div class="image">
+                                <img src="static/images/templates/semantic-ui/speaker/speaker-4.png">
+                            </div>
+                            <div class="content">
+                                <div class="header">Gavin Tree</div>
+                                <div class="meta">
+                                    <a class="group">Secretary</a>
+                                </div>
+                                <!-- <div class="description">One or two sentence description that may go to several lines</div> -->
+                                <div class="extra content">
+                                    <div class="right floated created">
+                                        <a href="#"><i class="github icon"></i></a>
+                                        <a href="#"><i class="linkedin icon"></i></a>
+                                        <a href="#"><i class="twitter icon"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // CARD -->
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+        <!-- // TEAM PAGE -->
+        <!-- FOOTER -->
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <div class="ui stackable inverted divided equal height stackable grid">
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">
+                        Our Socials
+                        </h4>
+                        <div class="ui inverted link list">
+                          <a class="item" href="#"> Twitter</a>
+                          <a class="item" href="#"> Facebook</a>
+                          <a class="item" href="#"> Instagram</a>
+                          <a class="item" href="#"> Medium Publication</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header">
+                        FAQ
+                        </h4>
+                        <div class="ui inverted link list">
+                            <a class="item" href="#"> What's Bitcoin?</a>
+                            <a class="item" href="#"> Using a Bitcoin Wallet</a>
+                            <a class="item" href="#"> Using ShapeShift</a>
+                            <a class="item" href="#"> Ethereum dApps</a>
+                        </div>
+                    </div>
+                    <div class="seven wide column">
+                        <h4 class="ui inverted header">
+                        Donation Addresses
+                        </h4>
+                        <p>
+                          <span>
+                            BTC: <a href="#">1BitcoinEaterAddressDontSendf59kuE <i class="external icon"></i></a>
+                          </span><br>
+                          <span>
+                            ETH: <a href="#">0x0000000000000000000000000000000000000000 <i class="external icon"></i></a>
+                          </span><br>
+                          <span style="font-size: 0.6em">
+                            <code>XMR: 4JUdGzvrMFDWrUUwY3toJATSeNwjn54LkCnKBPRzDuhzi5vSepHfUckJNxRL2gjkNrSqtCoRUrEDAgRwsQvVCjZbRx8NCvspxJMRJcG69H</code>
+                          </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="static/dist/semantic-ui/semantic.min.js"></script>
     <style type="text/css">
-      .hidden.menu {
+    .hidden.menu {
         display: none;
-      }
+    }
 
-      .ui.inverted.segment.landpage-image{
-            height: 55%;
-      }
+    .ui.inverted.segment.landpage-image {
+        height: 55%;
+    }
 
-      .ui.inverted.segment.landpage-image{
-          background-image: url("land.jpg");
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-attachment: fixed;
-      }
-      
-      .masthead.segment {
+    .ui.inverted.segment.landpage-image {
+        /*You can customize this at -> http://www.heropatterns.com/*/
+        background-color: #0b7a92;
+        background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2300f4ff' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+        background-repeat: repeat;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+
+    .mid {
+        /*You can customize this background script here -> http://www.heropatterns.com/*/
+        background-color: #ffffff;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%2300f4ff' fill-opacity='0.4' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+        background-attachment: fixed;
+    }
+
+    .masthead.segment {
         background: #4286f4;
         min-height: 600px;
         padding: 1em 0em;
-      }
-      .masthead .logo.item img {
+    }
+
+    .masthead .logo.item img {
         margin-right: 1em;
-      }
-      .masthead .ui.menu .ui.button {
+    }
+
+    .masthead .ui.menu .ui.button {
         margin-left: 0.5em;
-      }
-      .masthead h1.ui.header {
+    }
+
+    .masthead h1.ui.header {
         margin-top: 2em;
         margin-bottom: 0em;
         font-size: 4em;
         font-weight: normal;
-      }
-      .masthead h2 {
+    }
+
+    .masthead h2 {
         font-size: 1.7em;
         font-weight: normal;
-      }
-      
-      .ui.vertical.stripe {
+    }
+
+    .ui.vertical.stripe {
         padding: 8em 0em;
-      }
-      .ui.vertical.stripe h3 {
+    }
+
+    .ui.vertical.stripe h3 {
         font-size: 2em;
-      }
-      .ui.vertical.stripe .button + h3,
-      .ui.vertical.stripe p + h3 {
+    }
+
+    .ui.vertical.stripe .button+h3,
+    .ui.vertical.stripe p+h3 {
         margin-top: 3em;
-      }
-      .ui.vertical.stripe .floated.image {
+    }
+
+    .ui.vertical.stripe .floated.image {
         clear: both;
-      }
-      .ui.vertical.stripe p {
+    }
+
+    .ui.vertical.stripe p {
         font-size: 1.33em;
-      }
-      .ui.vertical.stripe .horizontal.divider {
+    }
+
+    .ui.vertical.stripe .horizontal.divider {
         margin: 3em 0em;
-      }
-      
-      .quote.stripe.segment {
+    }
+
+    .quote.stripe.segment {
         padding: 0em;
-      }
-      .quote.stripe.segment .grid .column {
+    }
+
+    .quote.stripe.segment .grid .column {
         padding-top: 5em;
         padding-bottom: 5em;
-      }
-      
-      .footer.segment {
+    }
+
+    .footer.segment {
         padding: 5em 0em;
-      }
-      
-      .secondary.pointing.menu .toc.item {
+    }
+
+    .secondary.pointing.menu .toc.item {
         display: none;
-      }
-      
-      @media only screen and (max-width: 700px) {
+    }
+
+    @media only screen and (max-width: 700px) {
         .ui.fixed.menu {
-          display: none !important;
+            display: none !important;
         }
         .secondary.pointing.menu .item,
         .secondary.pointing.menu .menu {
-          display: none;
+            display: none;
         }
         .secondary.pointing.menu .toc.item {
-          display: block;
+            display: block;
         }
         .masthead.segment {
-          min-height: 350px;
+            min-height: 350px;
         }
         .masthead h1.ui.header {
-          font-size: 2em;
-          margin-top: 1.5em;
+            font-size: 2em;
+            margin-top: 1.5em;
         }
         .masthead h2 {
-          margin-top: 0.5em;
-          font-size: 1.5em;
+            margin-top: 0.5em;
+            font-size: 1.5em;
         }
-      }      
+    }
 
-      .ui.inverted.button:hover #benhat{
+    .ui.inverted.button:hover #benhat {
         fill: #4A4A4A;
-      }
+    }
 
-      .ui.inverted.button:hover #benface{
+    .ui.inverted.button:hover #benface {
         fill: #F5A623;
-      }
-      
-
+    }
     </style>
     <script>
-      $(document)
+    $(document)
         .ready(function() {
-          // fix menu when passed
-          $('.masthead')
-            .visibility({
-              once: false,
-              onBottomPassed: function() {
-                $('.fixed.menu').transition('fade in');
-              },
-              onBottomPassedReverse: function() {
-                $('.fixed.menu').transition('fade out');
-              }
-            })
-          ;
-      
-          // create sidebar and attach to menu open
-          $('.ui.sidebar')
-            .sidebar('attach events', '.toc.item')
-          ;
-        })
-      ;
+            // fix menu when passed
+            $('.masthead')
+                .visibility({
+                    once: false,
+                    onBottomPassed: function() {
+                        $('.fixed.menu').transition('fade in');
+                    },
+                    onBottomPassedReverse: function() {
+                        $('.fixed.menu').transition('fade out');
+                    }
+                });
+
+            // create sidebar and attach to menu open
+            $('.ui.sidebar')
+                .sidebar('attach events', '.toc.item');
+        });
     </script>
-  </body>
+</body>
+
 </html>
